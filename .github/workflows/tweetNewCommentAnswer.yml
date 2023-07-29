@@ -1,4 +1,4 @@
-name: Tweet new questions on MATLAB Answers (every 2 hours)
+name: Tweet new commment/answers on MATLAB Answers (every 2 hours)
 # on: [push]
 # cron: 
 # * * * * * 

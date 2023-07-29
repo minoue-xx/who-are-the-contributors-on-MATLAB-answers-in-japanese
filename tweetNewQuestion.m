@@ -46,7 +46,6 @@ catch ME
     return;
 end
 
-latestID = 2001747; % test
 latestID = readmatrix('latestID.txt');
 
 % これまでに検知した最も大きいIDより大きいIDがあれば
@@ -63,7 +62,7 @@ else
     FlagLatest = true;
     [LatestID_JP,idx] = max(entryID); % latest ID
     % save
-    writematrix(latestID,'latestID.txt')
+    writematrix(LatestID_JP,'latestID.txt')
 
     % 新しい投稿を Tweet  
     for ii=1:sum(newID)

@@ -8,9 +8,9 @@ name: Tweet new commment/answers on MATLAB Answers (every 2 hours)
 # | | |----- day
 # | |------- hour
 # |--------- minute
- on: 
+on:
    schedule:
-     - cron: '0 0-23/2 * * *'
+     - cron: '0 1-23/2 * * *'
 #     - cron: '0 0,2,4,6,8,10,12,14,16,18,20,22 * * *'
 jobs:
   my-job:

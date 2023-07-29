@@ -39,7 +39,15 @@ jobs:
           API_KEY_SECRET: ${{ secrets.API_KEY_SECRET}}  
         with:
           command: tweetNewQuestion
-
+      - name: Check for Changes
+        id: changes
+        run: |
+          if [[ -n $(git status -s) ]]; then
+            echo "There are changes to commit."
+          else
+            echo "No changes to commit. Skipping..."
+            exit 0
+          fi
       - name: Push updated files
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

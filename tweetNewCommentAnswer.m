@@ -89,7 +89,7 @@ for ii=1:height(newitem_list)
     
     if tweetFlag
         try
-            py.tweetQiita.tweetV2(status)
+            py.tweetJPAnswers.tweetV2(status)
         catch ME
             disp(ME)
         end

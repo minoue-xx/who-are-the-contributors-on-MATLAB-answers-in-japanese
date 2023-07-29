@@ -80,7 +80,7 @@ else
         end
         disp(status);
         try
-            py.tweetQiita.tweetV2(status)
+            py.tweetJPAnswers.tweetV2(status)
         catch ME
             disp(ME)
             FailTwitterPost = true;

@@ -1,4 +1,4 @@
-
+% Copyright (c) 2023 The MathWorks, Inc.
 try
     xDoc = xmlread('https://jp.mathworks.com/matlabcentral/answers/questions?language=ja&format=atom&sort=updated+desc&status=answered');
     % まず各投稿は <entry></entry>

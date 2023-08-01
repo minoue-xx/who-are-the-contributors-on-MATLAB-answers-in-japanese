@@ -1,4 +1,4 @@
-
+% Copyright (c) 2023 The MathWorks, Inc.
 page = 1; % 1ページ（50投稿分)だけチェック
 try
     % トップページの RSS を読み込み（日本語、投稿の新しい順表示）

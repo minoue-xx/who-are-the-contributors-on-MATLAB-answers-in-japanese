@@ -1,3 +1,4 @@
+# Copyright (c) 2023 Michio Inoue
 def tweetV2(status):
 
     # https://www.jcchouinard.com/post-on-twitter-api-with-python/

@@ -73,9 +73,17 @@ else
         disp([string(ii) + "個目の投稿"]);
         
         if thisAuthor == "MathWorks Support Team"
-            status = thisAuthor + " からのヒント:「" + thisTitle + "」 -> "  + thisURL + "?s_eid=PSM_29405";
+            status = thisAuthor + " からのヒント";
+            status = status + newline;
+            status = status + "「" + thisTitle + "」" + newline;
+            status = status + "#MATLABAnswers" + newline;
+            status = status + thisURL + "?s_eid=PSM_29405";
         else
-            status = thisAuthor + " さんからの質問:「" + thisTitle + "」 -> "  + thisURL + "?s_eid=PSM_29405";
+            status = thisAuthor + " さんからの質問" + newline;
+            status = status + newline;
+            status = status + "「" + thisTitle + "」" + newline;
+            status = status + "#MATLABAnswers" + newline;
+            status = status + thisURL + "?s_eid=PSM_29405";
         end
         disp(status);
         try

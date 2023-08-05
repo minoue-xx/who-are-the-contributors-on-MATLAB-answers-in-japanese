@@ -80,7 +80,9 @@ for ii=1:height(newitem_list)
         
         % 投稿文
         status = "コメント/回答が付いています。" + newline;
-        status = status + "「" + newitem_list.titles(ii) + "」 -> ";
+        status = status + newline;
+        status = status + "「" + newitem_list.titles(ii) + "」" + newline;
+        status = status + "#MATLABAnswers";
         status = status + newitem_list.urls(ii)  + "?s_eid=PSM_29405" + newline;
         status = status + "#MATLABAnswers";
         

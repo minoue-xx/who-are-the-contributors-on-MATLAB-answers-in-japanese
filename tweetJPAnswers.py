@@ -1,4 +1,4 @@
-# Copyright (c) 2023 Michio Inoue
+# Copyright (c) 2022-2023 The MathWorks, Inc.
 def tweetV2(status):
 
     # https://www.jcchouinard.com/post-on-twitter-api-with-python/
